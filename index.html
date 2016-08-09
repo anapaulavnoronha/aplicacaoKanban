@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kanban</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="cabecalho container">
+            <h1 class="cabecalho-logo">Kanban</h1>
+            <button id="adicionarCartao"></button>
+        </div>
+    </header>
+
+    <section class="mural container">
+
+        <!-- TO DO -->
+        <div class="toDo">
+
+            <div class="coluna-titulo">
+                <h2 class="coluna-nome">To Do</h2>
+            </div>
+
+            <div class="coluna-cartoes">
+                <div class="cartao">
+                    <p contenteditable class="cartao-conteudo">Lala</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- DOING -->
+        <div class="doing">
+            <div class="coluna-titulo">
+                <h2 class="coluna-nome">Doing</h2>
+            </div>
+        </div>
+
+        <!-- DONE -->
+        <div class="done">
+            <div class="coluna-titulo">
+                <h2 class="coluna-nome">Done</h2>
+            </div>
+        </div>
+
+    </section>
+
+    <footer></footer>
+
+    <script src="lib/jquery.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
