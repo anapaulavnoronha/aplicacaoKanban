@@ -1,53 +1,24 @@
-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1%;
-    background-color: #ff7300;
-    height: 50px;
-}
-
 body {
-    background: #dfd9e2;
+    background: #f2f2f2;
     font-size: 16px;
 }
 
-.container {
-    margin: 0 auto;
-    width: 80%;
-}
-
-.cabecalho-logo {
-    display: inline-block;
-    font-family: 'Lobster', cursive;
-    font-size: 2.2em;
-    color: #fff;
-}
-
-#adicionarCartao {
-    float: right;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    border: none;
-    background: none;
-    background-image: url(../img/btn-adicionar.png);
-}
-
 .mural {
-    height: 600px;
+    height: 550px;
     display: flex;
+    align-items: stretch;
 }
 
 .toDo,
 .doing,
 .done {
     display: block;
-    box-sizing: content-box;
-    align-items: center;
+    box-sizing: border-box;
     background: #fff;
-    margin: 10px;
+    margin: 1%;
     flex: 1 1 auto;
     flex-basis: 33%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .coluna-titulo {
@@ -55,7 +26,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 40px;
+    height: 60px;
     text-align: center;
     margin-bottom: 8px;
 }
@@ -65,22 +36,4 @@ body {
     font-size: 1.1em;
     color: white;
     font-weight: 300;
-}
-
-.cartao {
-    margin: 8px 16px;
-    padding: 16px;
-    line-height: 1.5;
-    position: relative;
-    word-wrap: break-word;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1em;
-    background: #EBEF40;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, .1);
-    width: 290px;
-    display: inline-block;
-    box-sizing: border-box;
-    text-align: left;
-    flex-grow: 1;
-    flex-basis: 290px;
 }

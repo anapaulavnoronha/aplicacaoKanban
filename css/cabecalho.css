@@ -1,0 +1,38 @@
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1%;
+    background-color: #fff;
+    height: 70px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    /*laranja #ff7300;*/
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.cabecalho-logo {
+    display: inline-block;
+    font-family: 'Lobster', cursive;
+    font-size: 2.2em;
+    color: #fff;
+    color: #444444;
+    /* fallback for old browsers */
+    color: -webkit-linear-gradient(to left, #EFEFBB, #D4D3DD);
+    /* Chrome 10-25, Safari 5.1-6 */
+    color: linear-gradient(to left, #EFEFBB, #D4D3DD);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#adicionarCartao {
+    float: right;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    background: none;
+    background-image: url(../img/btn-adicionar.png);
+    color: black;
+}

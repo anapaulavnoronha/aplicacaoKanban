@@ -6,10 +6,11 @@
     <title>Kanban</title>
 
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/cabecalho.css">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/cartao.css">
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-
 
 </head>
 
@@ -19,6 +20,7 @@
         <div class="cabecalho container">
             <h1 class="cabecalho-logo">Kanban</h1>
             <button id="adicionarCartao"></button>
+
         </div>
     </header>
 
@@ -32,8 +34,13 @@
             </div>
 
             <div class="coluna-cartoes">
-                <div class="cartao">
-                    <p contenteditable class="cartao-conteudo">Lala</p>
+                <div class="cartao" id="cartao_1">
+                    <p contenteditable class="cartao-conteudo">Tarefa 1</p>
+                    <button class='remove-cartao' data-cartao="cartao_1"></button>
+                </div>
+                <div class="cartao" id="cartao_2">
+                    <p contenteditable class="cartao-conteudo">Tarefa 2</p>
+                    <button class='remove-cartao' data-cartao="cartao_2"></button>
                 </div>
             </div>
 
