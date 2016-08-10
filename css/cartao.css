@@ -11,10 +11,12 @@
     display: inline-block;
     box-sizing: border-box;
     text-align: left;
+    display: flex;
 }
 
 .cartao-conteudo {
-    width: 80%;
+    width: 90%;
+    word-break: break-word;
 }
 
 .remove-cartao {

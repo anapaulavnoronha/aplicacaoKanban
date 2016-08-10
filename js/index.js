@@ -16,7 +16,7 @@ function criaCartao() {
     novoCartao.append(botaoRemove);
     novoCartao.attr('id', 'cartao_' + numCartoes);
 
-    novoCartao.prependTo('.coluna-cartoes');
+    novoCartao.prependTo('.coluna-toDo');
 }
 
 //remover cartao
@@ -32,3 +32,8 @@ function removeCartao() {
         cartao.remove();
     }, 500);
 }
+
+$('.coluna-cartoes').sortable({
+    connectWith: ".coluna-cartoes",
+    cancel: '[contenteditable=true]'
+})

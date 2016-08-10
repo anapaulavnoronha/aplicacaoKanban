@@ -33,13 +33,13 @@
                 <h2 class="coluna-nome">To Do</h2>
             </div>
 
-            <div class="coluna-cartoes">
+            <div class="coluna-cartoes coluna-toDo">
                 <div class="cartao" id="cartao_1">
-                    <p contenteditable class="cartao-conteudo">Tarefa 1</p>
+                    <p contenteditable="true" class="cartao-conteudo">Tarefa 1</p>
                     <button class='remove-cartao' data-cartao="cartao_1"></button>
                 </div>
                 <div class="cartao" id="cartao_2">
-                    <p contenteditable class="cartao-conteudo">Tarefa 2</p>
+                    <p contenteditable="true" class="cartao-conteudo">Tarefa 2</p>
                     <button class='remove-cartao' data-cartao="cartao_2"></button>
                 </div>
             </div>
@@ -51,6 +51,9 @@
             <div class="coluna-titulo">
                 <h2 class="coluna-nome">Doing</h2>
             </div>
+
+            <div class="coluna-cartoes">
+            </div>
         </div>
 
         <!-- DONE -->
@@ -58,13 +61,16 @@
             <div class="coluna-titulo">
                 <h2 class="coluna-nome">Done</h2>
             </div>
+            <div class="coluna-cartoes">
+            </div>
         </div>
 
     </section>
 
     <footer></footer>
 
-    <script src="lib/jquery.js"></script>
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/jquery-ui.js"></script>
     <script src="js/index.js"></script>
 </body>
 

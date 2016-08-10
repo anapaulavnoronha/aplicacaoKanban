@@ -21,6 +21,10 @@ body {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+.coluna-cartoes {
+    height: 100%;
+}
+
 .coluna-titulo {
     background-color: #ff7300;
     display: flex;
