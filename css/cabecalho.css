@@ -35,4 +35,5 @@ header {
     background: none;
     background-image: url(../img/btn-adicionar.png);
     color: black;
+    cursor: pointer;
 }

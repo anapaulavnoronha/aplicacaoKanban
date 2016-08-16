@@ -12,6 +12,7 @@
     box-sizing: border-box;
     text-align: left;
     display: flex;
+    cursor: move;
 }
 
 .cartao-conteudo {
@@ -29,11 +30,24 @@
     background: none;
     background-image: url(../img/fechar.png);
     color: black;
+    cursor: pointer;
 }
 
 .cartao--some {
     opacity: 0;
     transition: 0.8s ease-in;
+}
+
+.cartao textarea {
+    background: none;
+    border: none;
+    resize: none;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 16px;
+    width: 90%;
+    padding: 10px;
+    outline: none;
 }
 
 

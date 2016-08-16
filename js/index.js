@@ -1,3 +1,4 @@
+//criar cartao
 var numCartoes = $('.cartao').length;
 $('#adicionarCartao').click(criaCartao);
 
@@ -5,7 +6,7 @@ function criaCartao() {
 
     numCartoes++;
 
-    var novoConteudo = $('<p>').addClass('cartao-conteudo').attr('contenteditable', true);
+    var novoConteudo = $('<textarea>').addClass('cartao-conteudo').attr('placeholder', 'Digite aqui...').attr('contenteditable', true);
 
     var botaoRemove = $('<button>').addClass('remove-cartao').attr('data-cartao', 'cartao_' + numCartoes);
     botaoRemove.click(removeCartao);
@@ -18,6 +19,13 @@ function criaCartao() {
 
     novoCartao.prependTo('.coluna-toDo');
 }
+
+/*$('.cartao').dblclick(editaCartao);
+
+function editaCartao() {
+    var conteudoEditavel = $('<p>').attr('contenteditable', true);
+}*/
+/*.attr('contenteditable', true)*/
 
 //remover cartao
 $('.remove-cartao').click(removeCartao);
