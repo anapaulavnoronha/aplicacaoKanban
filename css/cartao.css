@@ -28,7 +28,20 @@
     height: 16px;
     border: none;
     background: none;
-    background-image: url(../img/fechar.png);
+    background-image: url(../img/cancel.png);
+    color: black;
+    cursor: pointer;
+}
+
+.edita-cartao {
+    position: absolute;
+    top: 60%;
+    right: 3%;
+    width: 16px;
+    height: 16px;
+    border: none;
+    background: none;
+    background-image: url(../img/edit.png);
     color: black;
     cursor: pointer;
 }
@@ -48,6 +61,22 @@
     width: 90%;
     padding: 10px;
     outline: none;
+}
+
+
+/*modal*/
+
+#modal {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -100px;
+    padding: 10px;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #d0d0d0
 }
 
 

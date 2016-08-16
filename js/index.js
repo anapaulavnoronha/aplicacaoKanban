@@ -11,21 +11,21 @@ function criaCartao() {
     var botaoRemove = $('<button>').addClass('remove-cartao').attr('data-cartao', 'cartao_' + numCartoes);
     botaoRemove.click(removeCartao);
 
+    var botaoEdita = $('<button>').addClass('edita-cartao').attr('data-cartao', 'cartao_' + numCartoes);
+    botaoEdita.click(abreDetalhaCartao);
+
+
     var novoCartao = $('<div>').addClass('cartao');
 
     novoCartao.append(novoConteudo);
     novoCartao.append(botaoRemove);
+    novoCartao.append(botaoEdita);
     novoCartao.attr('id', 'cartao_' + numCartoes);
 
     novoCartao.prependTo('.coluna-toDo');
+
+
 }
-
-/*$('.cartao').dblclick(editaCartao);
-
-function editaCartao() {
-    var conteudoEditavel = $('<p>').attr('contenteditable', true);
-}*/
-/*.attr('contenteditable', true)*/
 
 //remover cartao
 $('.remove-cartao').click(removeCartao);
@@ -42,6 +42,24 @@ function removeCartao() {
 }
 
 $('.coluna-cartoes').sortable({
-    connectWith: ".coluna-cartoes",
+    connectWith: '.coluna-cartoes',
     cancel: '[contenteditable=true]'
 })
+
+//abre modal
+/*$('.cartao').on('click', abreDetalhaCartao);*/
+$('.edita-cartao').on('click', abreDetalhaCartao);
+
+function abreDetalhaCartao() {
+    console.log('oi');
+    var divModal = document.querySelector('#modal')
+    divModal.style.display = 'block';
+}
+
+//fecha modal
+$('#botao-fecha-modal').on('click', fechaDetalhaCartao);
+
+function fechaDetalhaCartao() {
+    var divModal = document.querySelector('#modal');
+    divModal.style.display = 'none';
+}
